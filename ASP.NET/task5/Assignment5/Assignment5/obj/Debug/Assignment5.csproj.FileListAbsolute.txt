@@ -1,0 +1,41 @@
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\obj\Debug\Assignment5.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\obj\Debug\Assignment5.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\App_Data\Chinook.mdf
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\App_Data\Chinook_log.ldf
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Web app project template v1.dll.config
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Web app project template v1.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Web app project template v1.pdb
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Antlr3.Runtime.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\AutoMapper.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\EntityFramework.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\EntityFramework.SqlServer.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Newtonsoft.Json.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Net.Http.Formatting.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Helpers.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Http.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Http.WebHost.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Mvc.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Optimization.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Razor.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\WebGrease.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Antlr3.Runtime.pdb
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\AutoMapper.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\EntityFramework.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\EntityFramework.SqlServer.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\Newtonsoft.Json.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Net.Http.Formatting.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Http.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Http.WebHost.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Helpers.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Mvc.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Optimization.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.Razor.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\obj\Debug\Web app project template v1.dll
+C:\Users\Ricardo\Documents\INT422\task5\Assignment5\Assignment5\obj\Debug\Web app project template v1.pdb

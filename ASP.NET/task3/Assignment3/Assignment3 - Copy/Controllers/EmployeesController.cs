@@ -1,0 +1,114 @@
+﻿using AutoMapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace Assignment3.Controllers
+{
+    public class EmployeesController : Controller
+    {
+        // GET: Employees
+
+        private Manager mgm = new Manager();
+
+        public ActionResult Index()
+        {
+            return View(mgm.EmployeeGetAll());
+        }
+
+        // GET: Employees/Details/5
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
+        // GET: Employees/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Employees/Create
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add insert logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Employees/Edit/5
+        public ActionResult Edit(int? id)
+        {
+            var res = mgm.EmplyeeGetOne(id.GetValueOrDefault());
+
+            if (res == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                var newform = Mapper.Map<EmployeeBase, EmployeeEditContactInfoForm>(res);
+                return View(newform);
+            }
+        }
+
+        // POST: Employees/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int? id, EmployeeEditContactInfo empinf)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Edit", new { id = empinf.EmployeeId });
+            }
+
+            if (id.GetValueOrDefault() != empinf.EmployeeId)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var edemp = mgm.EmployeeEditContactInfo(empinf);
+
+            if (edemp == null)
+            {
+                return RedirectToAction("Edit", new { id = empinf.EmployeeId });
+            }
+            else
+            {
+                return RedirectToAction("Index", new { id = empinf.EmployeeId });
+            }
+        }
+
+        // GET: Employees/Delete/5
+        [HttpPost]        
+        public ActionResult Delete(int? id)
+        {
+            return View();
+        }
+
+        // POST: Employees/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+}

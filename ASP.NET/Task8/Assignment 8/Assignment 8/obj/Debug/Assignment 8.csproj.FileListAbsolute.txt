@@ -1,0 +1,66 @@
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Web app project template v2.dll.config
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Web app project template v2.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Web app project template v2.pdb
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\AutoMapper.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\EntityFramework.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Owin.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Helpers.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Mvc.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Optimization.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Razor.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\WebGrease.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Antlr3.Runtime.pdb
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\AutoMapper.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Newtonsoft.Json.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Helpers.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Mvc.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Optimization.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.Razor.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\EntityFramework.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\EntityFramework.SqlServer.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Web app project template v2.dll
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Web app project template v2.pdb
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial.resources
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment 8.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.initial1.resources
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.test1.resources
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.test2.resources
+C:\Users\Ricardo\Documents\INT422\Task8\Assignment 8\Assignment 8\obj\Debug\Assignment_8.Migrations.test3.resources

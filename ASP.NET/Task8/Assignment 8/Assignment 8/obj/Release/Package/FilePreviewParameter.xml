@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="wa20017a8" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Ricardo\\Documents\\INT422\\Task8\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Ricardo\\Documents\\INT422\\Task8\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DataContext-Web.config Connection String" description="" value="Data Source=tcp:rde-oliveira-leal-ds2017a7.database.windows.net,1433;Initial Catalog=Assign8Store;Persist Security Info=True;User ID=rde-oliveira-leal;Password=Password123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ricardo\\Documents\\INT422\\Task8\\Assignment\ 8\\Assignment\ 8\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DataContext']/@connectionString" />
+  </parameter>
+</parameters>
