@@ -1,0 +1,2 @@
+This is a test. This test should show the number of words.
+words can be Words or words that does not metter if it is Caps or not.

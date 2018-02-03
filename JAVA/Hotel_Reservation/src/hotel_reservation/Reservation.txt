@@ -1,0 +1,4 @@
+
+1,Fri Jan 05 13:20:38 EST 2018,Sat Jan 06 20:00:00 EST 2018,Mon Jan 08 20:00:00 EST 2018,Ricardo,2,Single Room,100
+2,Fri Jan 05 13:24:04 EST 2018,Sun Jan 07 20:00:00 EST 2018,Tue Jan 09 20:00:00 EST 2018,Fabiana,2,Single Room,101
+3,Fri Jan 05 18:03:12 EST 2018,Tue Jan 23 20:00:00 EST 2018,Thu Jan 25 20:00:00 EST 2018,Rubens,2,Single Room,102

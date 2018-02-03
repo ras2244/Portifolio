@@ -1,0 +1,29 @@
+100,70.0,Single Room,false
+
+101,70.0,Single Room,false
+
+102,70.0,Single Room,false
+
+103,70.0,Single Room,true
+
+104,70.0,Single Room,true
+200,120.0,Double Room,true
+
+201,120.0,Double Room,true
+
+202,120.0,Double Room,true
+
+203,120.0,Double Room,true
+
+204,120.0,Double Room,true
+300,160.0,Delux Room,true
+
+301,160.0,Delux Room,true
+
+302,160.0,Delux Room,true
+
+303,160.0,Delux Room,true
+400,250.0,Penthouse,true
+
+401,250.0,Penthouse,true
+done

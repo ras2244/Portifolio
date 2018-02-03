@@ -1,0 +1,38 @@
+run:
+The lottery number is 644
+Enter a three-digit number: 644
+Exact match: you won $10,000
+The lottery number was 644
+
+BUILD SUCCESSFUL (total time: 8 seconds)
+
+run:
+The lottery number is 928
+Enter a three-digit number: 200
+Match one digit: you won $1,000
+The lottery number was 928
+
+BUILD SUCCESSFUL (total time: 9 seconds)
+
+The lottery number is 383
+Enter a three-digit number: 353
+Two digits match: you won $2,000
+The lottery number was 383
+
+BUILD SUCCESSFUL (total time: 12 seconds)
+
+The lottery number is 062
+Enter a three-digit number: 555
+You did not have luck this time! keep trying
+The lottery number was 062
+
+BUILD SUCCESSFUL (total time: 10 seconds)
+
+The lottery number is 476
+Enter a three-digit number: 6754
+
+Invalid input please insert only 3 digits
+C:\Users\Ricardo\AppData\Local\NetBeans\Cache\8.2\executor-snippets\run.xml:53: Java returned: 1
+BUILD FAILED (total time: 3 seconds)
+
+
