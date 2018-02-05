@@ -1,0 +1,32 @@
+
+@media screen and (min-width: 691px) {
+
+  #_page-knowledge-centre > div:nth-child(3) > div:first-child > div:first-child > h3,
+  #_page-centre-dexpertise > div:nth-child(3) > div:first-child > div:first-child > h3 {
+    
+        padding-top: 1.5em;
+  }
+}
+
+
+#_page-knowledge-centre .table>tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th,
+#_page-centre-dexpertise .table>tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+
+  border-top: none;
+}
+
+@media screen and (min-width: 691px) {
+
+  #_page-knowledge-centre > div:nth-child(3) > div:first-child > div:first-child > table:last-child > h3,
+  #_page-centre-dexpertise > div:nth-child(3) > div:first-child > div:first-child > table:last-child > h3 {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+  }
+}
+
+/*#_page-knowledge-centre,
+#_page-centre-dexpertise {
+  padding-bottom: 5em;
+  border-bottom: 3px solid #67bdcb;
+}
+*/

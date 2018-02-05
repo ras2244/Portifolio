@@ -1,0 +1,49 @@
+
+
+#_page-career > div:first-child > div:first-child > div:first-child > p,
+#_page-carrieres > div:first-child > div:first-child > div:first-child > p {
+  padding-bottom: 2em;
+}
+
+/*#_page-career,
+#_page-carrieres {
+  padding-bottom: 5em;
+  border-bottom: 3px solid #67bdcb;
+}*/
+
+#_page-career a,
+#_page-carrieres a {
+    color: #67bdcb;
+    text-decoration: underline;
+}
+
+#_page-career a:focus,
+#_page-career a:visited,
+#_page-career a:hover,
+#_page-carrieres a:focus,
+#_page-carrieres a:visited,
+#_page-carrieres a:hover {
+  color: #67bdcb;
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width: 691px) {
+
+  #_page-career > div:first-child > div:first-child > div:first-child > h3:first-child,
+  #_page-career > div:first-child > div:first-child > div:first-child > p,
+  #_page-carrieres > div:first-child > div:first-child > div:first-child > h3:first-child,
+  #_page-carrieres > div:first-child > div:first-child > div:first-child > p {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+
+  #_page-career > div:first-child > div:first-child > div:first-child > h3:first-child,
+  #_page-career > div:first-child > div:first-child > div:first-child > p,
+  #_page-carrieres > div:first-child > div:first-child > div:first-child > h3:first-child,
+  #_page-carrieres > div:first-child > div:first-child > div:first-child > p {
+    margin-left: -14px;
+  }
+}

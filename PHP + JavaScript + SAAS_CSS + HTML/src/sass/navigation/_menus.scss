@@ -1,0 +1,302 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+#alexa-nav > li:last-child a,
+#alexa-nav > li:last-child a p {
+	color: #67bdcb;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+/* -------------- */
+.navbar-brand{
+	width: 100%;
+    height: 50%;
+}
+
+$font_size_menu_list: 19px;
+
+.cst-menu-list{
+	font-size: $font_size_menu_list;
+	font-weight: 300;
+	color: rgb(103, 189, 203);
+	text-transform: uppercase;
+	line-height: 1.263;
+	float: right;
+	z-index: 31;
+
+
+	/* @media screen and (max-width: 1140px) {
+    	font-size: 16px;
+    	.cst-req-a-Q{
+    		font-size: 12px;
+    	}
+	}
+
+	@media screen and (max-width: 1078px) {
+    	font-size: 14px;
+    	.cst-req-a-Q{
+    		font-size: 10px;
+    	}
+	}
+
+	@media screen and (max-width: 1000px) {
+    	font-size: 12px;
+    	.cst-req-a-Q{
+    		font-size: 8px;
+    	}
+	} */
+
+	/*@media screen and (max-width: 926px) {
+    	font-size: 12px;
+	}*/
+
+
+	@media screen and (max-width: 770px) {
+    	float: left;
+    	font-size: 19px;
+    	.cst-req-a-Q{
+    		font-size: 15px;
+    	}
+	}
+
+}
+
+.cst-req-a-Q{
+	color: #b1b6bc;
+	font-size: $font_size_menu_list - 5;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.6;
+	z-index: 76;
+	left: 8px;
+    position: absolute;
+	padding-left: 5px;
+}
+
+.req-fr{
+	font-size: $font_size_menu_list - 6;
+}
+
+.icon-bar{
+	color: black;
+}
+
+/* header and logo*/
+#bs-example-navbar-collapse-1{
+	width: 100%;
+}
+#alexa-logo-img {
+	padding-right: 0
+}
+
+#alexa-logo-img > a{
+	padding-right: 0
+}
+
+#alexa-logo-img > a > img {
+	padding-right: 0
+}
+
+#search-from-container{
+	@media screen and (max-width: 770px) {
+    	/*display: none;*/
+	}
+}
+
+.cst-brand-logo{
+	margin-left: 15%;
+	padding-top: 20px;
+	@media (max-width: 1214px){
+		 /* padding-top: 20%; 	 */
+		 margin-left: 0%;
+	}
+}
+
+.cst-header{
+
+	background-color: white;
+    border-bottom: 0;
+    display:none;
+
+}
+
+.cst-sub-menu {
+	border: 0;
+	background-color: rgba(0,0,0,0);
+	letter-spacing: 1px;
+	a{
+		font-weight: 300 !important;
+	}
+}
+
+.cst-sub-menu > li{
+	background-color: #67bdcb;
+
+	border-style: solid;
+	border-width: 1px;
+    border-color: white;
+}
+
+.cst-sub-menu > li > a {
+	color: white;
+	/*color: #67bdcb;*/
+}
+
+
+
+.dropdown-toggle > i{
+
+	@media(max-width: 1214px){
+		display: inline-block;
+	}
+	display: none;
+}
+
+.current_page_item > a{
+	/*color:  #76c5d3 !important ;*/
+
+
+	/*color: red;	*/
+	
+}
+
+.menu-span-pg{
+	display: block;
+	font-size: 12px;
+    text-align: center;
+    color: #67bdcb;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /*background-color: #67bdcb;*/
+}
+
+
+.open{
+	background-color: white;
+}
+
+.open > a{
+		background-color: #eafcff  !important;
+/*		color: #67bdcb;*/
+		/*padding-bottom: 0px !important;*/
+}
+
+.cst-teal{
+	color: #67bdcb !important;
+	/*background-color: black;*/
+}
+
+.sub_menu_dropdown{
+	position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

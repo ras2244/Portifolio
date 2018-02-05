@@ -1,0 +1,649 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* --------------- */
+
+.cst-content-box{
+	padding-top: 2%;
+	text-align: center;
+
+	h4{
+		font-weight: 300;
+		letter-spacing: 3px;
+		margin-top:0px;
+	}
+
+
+
+	@media(max-width: 1143px){
+		/* min-height:220px;  */
+	}
+
+	@media(max-width: 768px){
+		margin-bottom:30px;
+	}
+
+	div>div:nth-child(1){
+		min-height: 126px;
+		p{font-weight: 400;}
+		p:first-child{
+			letter-spacing: 5px;
+			font-size: 20px;
+		}
+		/* min-height: 126px; */
+
+		@media(max-width: 1174px){
+			min-height: 150px;
+		}
+
+		@media(max-width: 939px){
+			min-height: 180px;
+
+		}
+
+		@media(max-width: 767px){
+			min-height:0;
+			/* margin-bottom:20px  */
+		}
+	}
+}
+
+.cst-first-content{
+	/*text-align: center; */
+	border-top-color: rgb(103, 189, 203);
+}
+
+.cst-content-title{
+	color: rgb(103, 189, 203);
+  	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 22px;
+	line-height: 1.091;
+  	text-align: center;
+  	/*width: 358px;*/
+  	height: 51px;
+  	z-index: 17;
+}
+
+.cst-content-title > p {
+	/*margin: 0px;*/
+}
+
+.cst-content-title + div {
+	/*font-weight: bolder;*/
+
+	@media(max-width: 1174px){
+		min-height: 120px;
+	}
+
+	@media(max-width: 939px){
+		min-height: 150px;
+
+	}
+
+	@media(max-width: 768px){
+		min-height:0;
+	}
+	letter-spacing: 0.3px;
+	min-height: 96px;
+	font-size: 16px;
+}
+
+.cst-part-content{
+	min-height: 270px;
+}
+
+.part-1{
+	border-top-color: rgb(103, 189, 203);
+}
+
+.part-2{
+	margin-bottom:20px;
+
+	:nth-child(1){
+		:first-child{
+			margin-bottom: 0px;
+		}
+	}
+}
+
+#cc-content-2 > p {
+	background-color: rgb(255, 255, 255);
+  	opacity: 0.8;
+}
+
+/*footer*/
+
+
+.cst-footer-header{
+	font-weight: bolder;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+  	text-transform: uppercase;
+  	text-align: left;
+  	width: 240px;
+  	z-index: 26;
+  	width: 100%;
+  	margin: 0;
+}
+
+.cst-footer-header + p {
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	width: 240px;
+	z-index: 26;
+}
+
+
+.cst-footer-box{
+	height:auto;
+	padding-top: 30px;
+
+	@media(max-width: 350px){
+			/* height:250px;			 */
+		}
+
+	@media(min-width: 767px){
+			/*height:380px;			*/
+		}
+}
+
+.cst-footer-box > div {
+	padding: 2%;
+}
+
+.first-footer-box{
+	p{
+		font-weight: 300;
+	}
+}
+
+.foot-career {
+	p {
+		font-weight: bolder;
+	    letter-spacing: 2px;
+	    color: white;
+	    text-transform: uppercase;
+	    text-align: left;
+	    width: 240px;
+	    z-index: 26;
+	    width: 100%;
+	    margin: 0;
+	}
+
+	a{
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+.foot-contact-us{
+
+	p{
+		font-weight: bolder;
+	    letter-spacing: 2px;
+	    color: white;
+	    text-transform: uppercase;
+	    text-align: left;
+	    width: 240px;
+	    z-index: 26;
+	    width: 100%;
+	    margin: 0;
+	}
+}
+
+.cst-footer{
+	background-color: darkgrey;
+	color:white;
+	p{
+		color: white;
+		font-size: 1.2rem;
+	}
+}
+
+.cst-transparent {
+	background-color: rgba(0,0,0,0);
+	color: black;
+	border-style: solid ;
+	border-color: white;
+	border-width: 1px;
+	width: 100%;
+	/*border-radius: 0px;*/
+}
+
+.cst-link-white{
+	color: white;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*------------------*/
+.cst-box{
+	color: #67bdcb;
+	font-size: 22px;
+}
+
+
+
+/*------------------*/
+
+
+/*-------------translation Page-------------*/
+
+#_page-translation > div:last-child > div,
+#_page-traduction > div:last-child > div {
+
+	ul {
+		padding: 0px;
+		margin: 0px;
+		list-style-position:outside;
+		padding-left: 15px;
+		font-weight: 500;
+		color: rgba(0, 0, 0, 255);
+		font-size: 15px;
+	}
+}
+
+.cst-ul-text ul{
+
+		padding: 0px;
+		margin: 0px;
+		list-style-position:outside;
+		padding-left: 15px;
+		font-weight: 500;
+		color: rgba(0, 0, 0, 255);
+		font-size: 15px;
+}
+
+@media screen and (max-width: 691px) {
+
+	#_page-translation div:nth-child(2) div:first-child div:first-child {
+		margin-left: -15px;
+	}
+}
+
+/*-------------Social Responsibility Page-------------*/
+#_page-social-responsibility,
+#_page-responsabilite-sociale{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------advantage Page-------------*/
+#_page-alexa-advantages,
+#_page-les-avantages-dalexa{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Languages Page-------------*/
+#_page-languages,
+#_page-langues{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Sector > Legal Page-------------*/
+#_page-legal,
+#_page-secteur-juridique{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Sector > Financial Page-------------*/
+#_page-financial,
+#_page-finances{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Sector > consumer products Page-------------*/
+#_page-consumer-products,
+#_page-biens-de-consommation{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Sector > technicals Page-------------*/
+#_page-technical,
+#_page-secteur-technique{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Sector > _page-government Page-------------*/
+#_page-government,
+#_page-gouvernement{
+	p{
+		font-weight: 300;
+	}
+}
+
+
+/*-------------Sector >_page-translation Page-------------*/
+#_page-translation,
+#_page-traduction{
+	p{
+		font-weight: 300;
+	}
+	ul > li{
+		font-weight: 300;
+	}
+}
+
+
+/*-------------Sector > _page-cultural-consulting Page-------------*/
+#_page-cultural-consulting,
+#_page-services-conseils-culturels{
+	p{
+		font-weight: 300;
+	}
+}
+
+
+/*------------- > _page-integrated-services Page-------------*/
+#_page-integrated-services,
+#_page-services-integres{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*------------- > _page-knowledge-centre Page-------------*/
+#_page-knowledge-centre,
+#_page-centre-dexpertise{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*------------- > _page-media Page-------------*/
+#_page-media,
+#_page-medias-et-evenements{
+	p{
+		font-weight: 300;
+	}
+}
+
+/*------------- > _page-choose-alexa Page-------------*/
+#_page-choose-alexa,
+#_page-choisir-alexa{
+	p{
+		font-weight: 300;
+	}
+}
+
+
+/*-------------cultural consulting Page-------------*/
+
+#_page-cultural-consulting > div:last-child > div,
+#_page-services-conseils-culturels > div:last-child > div{
+
+
+	@media (max-width: 1200px){
+		height: 90vw;
+	}
+
+	@media (max-width: 992px){
+		height: 130vw;
+	}
+
+	@media (max-width:770px){
+		height: 140vw;
+	}
+
+	@media (max-width: 700px){
+		height: 160vw;
+	}
+
+	@media (max-width: 568px){
+		height: 175vw;
+	}
+
+	@media (max-width: 537px){
+		height: 290vw;
+	}
+
+	@media (max-width: 450px){
+		height: 320vw;
+	}
+
+	@media (max-width: 413px){
+		height: 320vw;
+	}
+
+	@media (max-width: 370px){
+		height: 430vw;
+	}
+
+	@media (max-width: 310px){
+		height: 600vw;
+	}
+	p
+	{
+	 background-color: white;
+	 opacity: 0.8;
+	 z-index: 18;
+	 padding: 2%;
+     padding-right: 0%;
+     padding-left: 5%;
+	}
+
+	h3
+	{
+		color: white;
+	}
+
+	height: 71.5vw;
+
+	background-position-x: 50%;
+	padding-top: 100px;
+
+}
+
+/*-------------sectors Page-------------*/
+
+#_page-sectors > div:last-child > div ,
+#_page-secteurs > div:last-child > div {
+
+    @media (max-width: 992px){
+		height: 60vw;
+	}
+
+    @media (max-width: 767px){
+		height: 90vw;
+	}
+
+	@media (max-width: 480px){
+		height: 150vw;
+	}
+
+
+
+	height: 71.5vw;
+    background-position-x: 50%;
+    padding-top: 50px;
+
+
+}
+
+.cst-link-bg-colour{
+	background-color: white;
+	/*opacity: 0.8;*/
+	z-index: 18;
+	padding-left: 5%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+/*-------------alexa about us Page-------------*/
+
+#_page-who-we-are > div:last-child > div,
+#_page-profil > div:last-child > div {
+	img{
+		width: 100%
+	}
+
+}
+
+#_page-who-we-are ,
+#_page-profil  {
+	p{
+		font-weight: 300;
+	}
+}
+
+/*-------------Search Page-------------*/
+
+#primary{
+
+	/*width: 70%;
+	float: right;*/
+	/*background-color: #f0f0f0;*/
+
+
+	.entry-meta, footer{
+		font-size: 15px;
+	}
+	span{
+		margin-right: 1%;
+	}
+}
+
+/* ---------404------------- */
+.page-title{
+	padding-top: 7px;
+    padding-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.04167;
+}
+
+
+
+#ins_margin{
+	padding-left: 30px;
+}
+
+
+#secondary{
+	width: 30%;
+	margin-top: 3%;
+
+	#recent-posts-2,#recent-comments-2, #archives-2, #categories-2,#meta-2{
+	float: left;
+	clear: left;
+	}
+	ul{
+		font-size: 15px;
+		margin-left: 0px;
+		padding-top: 2%;
+	}
+	label{
+		font-size: 10px;
+		width: 65%;
+
+	}
+	.search-field{
+		width: 100%;
+	}
+	.search-submit{
+		font-size: 10px;
+	}
+
+}
+#colophon{
+	clear: both;
+}
+
+
+
+
+/*------------------Header Title Stylilng-------------------*/
+
+
+#page_header_title{
+	visibility: hidden;
+	position: relative;
+	margin-bottom: 2%;
+	@media (max-width: 767px){
+		background-color: rgb(177,182,188);
+	    padding: 2%;
+	    visibility: visible;
+	}
+	button{
+		font-size: 15px;
+	}
+}
+
+
+
+/*------------------Dropdown content-------------------*/
+
+.cst-dropdown-content{
+	background-color: rgb(103, 189, 203);
+	opacity: 0.8;
+	/*width: 801px;
+	height: 73px;
+	z-index: 16;*/
+}
+
+.cst-mobile-hidden{
+	display: none;
+	@media (max-width: 767px){
+		display: block;
+	}
+}
+
+
+
+/*----------------Sector page learn more link -------------------*/
+
+.learnMore_img{
+	position: relative;
+    top: 50%;
+    transform: translateY(30%);
+
+}
+
+.content-block-line{
+	margin-top: 5em;
+    border-top: 3px solid #67bdcb !important;
+}
+
+/*--------------Choose alexa title post block styling -----------------------*/
+.choose-alexa-post :nth-child(1) {
+	margin-bottom: 0px;
+}

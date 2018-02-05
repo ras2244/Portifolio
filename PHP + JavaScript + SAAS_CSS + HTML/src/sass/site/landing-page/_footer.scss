@@ -1,0 +1,18 @@
+#footerStampLogo
+{
+	display: flex;
+    align-items: center;
+}
+
+.cst-border-left-right{
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+#colophon > div:first-child > div:first-child > div:nth-child(2) > div:first-child {
+	display: none;
+}
+
+#colophon > div:first-child > div:first-child > div:nth-child(2) {
+	height: 31em;
+}

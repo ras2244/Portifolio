@@ -1,0 +1,330 @@
+
+
+body{
+	font-family: 'Fira Sans', sans-serif;
+
+}
+
+	/* Nav bar */
+.navbar-brand{
+	width: 100%;
+    height: 50%;
+}
+
+.cst-menu-list{
+	font-size: 19px;
+	color: rgb(103, 189, 203);
+	text-transform: uppercase;
+	line-height: 1.263;
+	float: right;
+	z-index: 31;
+}
+
+.icon-bar{
+	color: black;
+}
+
+/* Search bar form (#search-bar) */
+#search-bar > input{
+	font-size: 14px;
+	color: rgb(128, 130, 133);
+	font-style: italic;
+	line-height: 1.714;
+	text-align: left;
+	/*position: absolute;
+	left: 903.134px;
+	top: 13.502px;*/
+	z-index: 78;
+}
+
+#search-bar > button {
+	padding: 2px 5px; 
+	background-color:darkgrey; 
+	border-radius: 0;
+}
+
+/* FR link */
+#search-bar > a { 
+	padding-left: 2%;
+	font-size: 14px;
+	color: rgb(128, 130, 133);
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 1.714;
+	text-align: right;
+	/*position: absolute;
+	left: 1229px;
+	top: 39.252px;*/
+	z-index: 77;
+}
+
+
+#alexa-logo-img {
+	padding-right: 0
+}
+
+#alexa-logo-img > a{
+	padding-right: 0
+}
+
+#alexa-logo-img > a > img {
+	padding-right: 0
+}
+
+.cst-header{
+	background-color: white;
+    border-bottom: 0;
+    display:none; 
+    
+}
+
+.cst-slash-btn {
+	color: grey;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.1rem;
+    display: inline-block;
+    transform: skew(-21deg);
+    text-decoration: none;
+    border-style: solid solid;
+    border-width: 0px 5px;
+    border-color: darkturquoise;
+    border-top: 0px;
+    border-bottom: 0px;
+    outline: 0px;
+    padding: 12px 20px;
+
+/*
+  &:visited { color: #fff; }
+  &:hover { background: #0069a8; }
+  & > span { display: inline-block; transform: skew(21deg); }  Un-skew the text 
+*/
+}
+
+.cst-slash-btn:visited{
+	color: blue;
+}
+
+.cst-slash-btn:hover{
+	background-color: darkturquoise;
+}
+
+.cst-slash-btn > span {
+	display: inline-block;
+    transform: skew(21deg);
+/*	font-weight: 100;*/
+	
+}
+
+.cst-brand-logo{
+	width: 22%;
+    padding: 1.5em;
+}
+
+/* Contents */
+.cst-content-box{
+	/*padding-top: 2% */
+}
+
+.cst-first-content{
+	/*text-align: center; */
+	border-top-color: rgb(103, 189, 203);
+}
+
+.cst-content-title{
+	color: rgb(103, 189, 203);
+  	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 22px;
+	line-height: 1.091;
+  	text-align: center;
+  	/*width: 358px;*/
+  	height: 51px;
+  	z-index: 17;
+
+}
+
+.cst-content-title + div {
+	font-weight: bolder;
+	letter-spacing: 0.3px;
+	min-height: 50px;
+	font-size: 16px
+}
+
+	/* Buttons */
+.cst-btn-learn{
+	padding-top: 25px;
+}
+
+
+/**
+.carousel-inner > .item > img {
+    margin: 0 auto;
+} */
+
+	/* Carousel */
+.carousel-indicators .active{
+	width: 20px;
+	height: 20px;
+	background-color: darkgray;
+}
+
+.carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background-color: lightgrey;
+	border-radius: 0px
+}
+
+.carousel-indicators{
+	/*top:580px;
+	left: 980px;*/
+}
+
+/*Right alignment of sub menus*/
+.rightMenu {
+  left: 150px;
+  top: 0.5px;
+  border-radius: 0
+}
+.fa-caret-right {
+    float: right;
+}
+#mainCarouselContainer{
+	margin-bottom:3%
+}
+
+.carousel-caption{
+	/*right: 5%;*/
+    bottom: 20%;
+}
+
+.cst-carousel-title{
+	font-size: 27.455px;
+	/*font-weight: 200px;*/
+	color: rgb(255, 255, 255);
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: 1.238;
+	text-shadow: 0px 2px 2px rgba(20, 74, 78, 0.16);
+	-moz-transform: matrix( 1.32002443200567,0,0,1.32002443200567,0,0);
+	-webkit-transform: matrix( 1.32002443200567,0,0,1.32002443200567,0,0);
+	-ms-transform: matrix( 1.32002443200567,0,0,1.32002443200567,0,0);
+	/*position: absolute;
+	left: 617.918px;
+	top: 458.746px;*/
+	z-index: 62;
+}
+
+.cst-carousel-btn {
+    width: 220px;
+    height: 56px;
+    border-width: 7px;
+    border-color: white
+}
+
+.cst-carousel-btn > span {
+	font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: white;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+	/* Footer */
+#signUpForm > div{
+	padding-top: 2%;
+}
+
+.cst-footer-header{
+	font-weight: bolder;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+  	text-transform: uppercase;
+  	text-align: left;
+  	width: 240px;
+  	z-index: 26;
+  	width: 100%;
+  	margin: 0;
+}
+
+.cst-footer-header + p {
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	width: 240px;
+	z-index: 26;
+}
+
+.cst-footer-text{
+	
+}
+
+.cst-footer-box{
+	border-right:1px solid white;
+	height:auto;
+	padding-top: 30px;
+	height: 380px;
+}
+
+.cst-footer-box > div {
+	padding: 2%;
+}
+
+.cst-footer{
+	background-color: darkgrey;
+	color:white;
+}
+
+.cst-transparent {
+	background-color: rgba(0,0,0,0);
+	color: black;
+	border-style: solid ;
+	border-color: white;
+	border-width: 1px;
+	width: 100%
+}
+
+.cst-link-white{
+	color: white;
+	text-decoration: underline;
+}
+
+	/* Common css */
+.cst-right{
+	text-align: right;
+}
+
+.cst-left{
+	text-align: left;
+}
+
+.cst-center{
+	text-align: center;
+}
+
+.cst-no-padding{
+	padding: 0;
+}
+
+.cst-sub-menu {
+	border: 0;
+	background-color: rgba(0,0,0,0);
+}
+
+.cst-sub-menu > li{
+	background-color: #67bdcb;
+	border-style: solid;
+	border-width: 1px;
+    border-color: white;
+}
+
+.cst-sub-menu > li > a {
+	color: white;
+}

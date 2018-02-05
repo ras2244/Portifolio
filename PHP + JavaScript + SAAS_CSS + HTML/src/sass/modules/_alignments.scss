@@ -1,0 +1,77 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+.cst-right{
+	text-align: right;
+}
+
+.cst-float-right{
+	float: right;
+}
+
+.cst-left{
+	text-align: left;
+}
+
+.cst-center{
+	text-align: center;
+}
+
+.cst-no-padding{
+	padding: 0;
+}
+
+.cst-no-left-padding{
+	padding-left: 0;
+}
+
+.cst-no-right-padding{
+	padding-right: 0;
+}
+
+.cst-no-margin{
+	margin: 0;
+}
+
+.cst-hidden{
+	display: none
+}
+
+.cst-background-image{
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	height: 71.5vw;
+    background-size: cover;*/
+
+}
+
+.well{
+	margin-bottom: 0px
+}
+
+.cst-fit{
+	width: 1%;
+    white-space: nowrap;
+}
+
+.cst-no-border-radius{
+	border-radius: 0;
+}
+
+.cst-margin-b-2{
+	margin-bottom: 2%;
+}

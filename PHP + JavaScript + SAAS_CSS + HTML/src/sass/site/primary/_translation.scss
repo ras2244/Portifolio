@@ -1,0 +1,15 @@
+/*#_page-translation,
+#_page-traduction {
+  padding-bottom: 5em;
+  border-bottom: 3px solid #67bdcb;
+}
+*/
+#_page-translation > div:nth-child(2) > div:first-child > div:first-child,
+#_page-traduction > div:nth-child(2) > div:first-child > div:first-child {
+  padding-bottom: 2em;
+}
+
+#_page-translation > div:nth-child(4) > div:first-child > div:first-child > div:first-child,
+#_page-traduction > div:nth-child(4) > div:first-child > div:first-child > div:first-child {
+  padding-top: 1.2em;
+}

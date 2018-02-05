@@ -1,0 +1,224 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	/*border: 1px solid;*/
+	border-color: $color__border-button;
+	/*border-radius: 3px;*/
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+/*------------------*/
+
+#search-bar > div > div > label[for="s"]{
+	/* display: none; */
+	/* visibility: hidden; */
+	/* color: white; */
+	/* font-size: 0; */
+}
+#search-bar > div > div > input[type="text"],
+#search-bar > div > div > input[type="submit"] {
+	font-size: 12px;
+	color: rgb(128, 130, 133);
+	font-style: italic;
+	line-height: 1.714;
+	text-align: left;
+	/*position: absolute;
+	left: 903.134px;
+	top: 13.502px;*/
+	z-index: 78;
+	width: 85%;
+	color: rgb(128, 130, 133);
+	/* input[value='_']{
+		color: white;
+	} */
+}
+/* #search-bar > div > div > input[value="_"]{
+	color: white;
+} */
+#search-bar > div > div > input[type="submit"]{
+    height: 28px;
+    width: 29px;
+    top: 0;
+    position: absolute;
+    
+
+}
+
+#search-bar > button {
+	/*padding: 2px 5px; */
+	background-color: white;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+/* FR link */
+/*#search-bar > div > a {
+	padding-left: 2%;
+	font-size: 14px;
+	color: rgb(128, 130, 133);
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 1.714;
+	text-align: right;
+	position: absolute;
+	left: 1229px;
+	top: 39.252px;
+	z-index: 77;
+}*/
+
+#search-btn-toggle{
+	@media (max-width: 1214px){
+		position: absolute;
+   		right: 5%;
+    	margin-top: 3%; 
+    	border: 0;
+
+	}
+
+	@media (max-width: 767px){
+		position: absolute;
+   		right: 5%;
+    	margin-top: 5%; 
+    	border: 0;
+
+	}
+	@media (max-width: 523px){
+	   		margin-top: 7%; 
+		}	
+	@media (max-width: 455px){
+	   		margin-top: 8%; 
+		}	
+	@media (max-width: 350px){
+	   		margin-top: 12%; 
+		}	
+	img{
+		width: 50px;
+	   	height: 50px;
+	   	@media (max-width: 350px){
+	   		width: 35px;
+	   		height: 35px;
+	   	}
+	}
+
+
+}
+
+/* #search-btn-toggle img{
+	@media (max-width: 767px){
+		position: absolute;
+   		right: 5%;
+    	margin-top: 5%; 
+    	border: 0;
+		width: 35px;
+	   	height: 35px;
+	}
+
+	position: absolute;
+   	right: 5%;
+    margin-top: 5%; 
+    border: 0;
+    width: 50px;
+	height: 50px;
+
+} */
+
+.cst-slash-btn {
+	color: grey;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.1rem;
+    display: inline-block;
+    transform: skew(-21deg);
+    text-decoration: none;
+    border-style: solid solid;
+    border-width: 0px 5px;
+    border-color: darkturquoise;
+    border-top: 0px;
+    border-bottom: 0px;
+    outline: 0px;
+    padding: 6px 20px;
+
+/*
+  &:visited { color: #fff; }
+  &:hover { background: #0069a8; }
+  & > span { display: inline-block; transform: skew(21deg); }  Un-skew the text
+*/
+}
+
+.cst-slash-btn:visited{
+	color: blue;
+}
+
+.cst-slash-btn:hover{
+	background-color: darkturquoise;
+}
+
+.cst-slash-btn > span {
+	display: inline-block;
+    transform: skew(21deg);
+/*	font-weight: 100;*/
+
+}
+
+.cst-btn-learn{
+	padding-top: 25px;
+}
+
+#signUpForm > div {
+	padding-top: 2%;
+}
+#signUpForm{
+	width: 80%
+}
+#signupSubmit{
+	width: 124px;
+	height: 24px;
+	padding-top: 2%;
+	color: darkgrey;
+}
+
+.cst-form-submit{
+	background-repeat: no-repeat;
+    border: 0;
+    border-radius: 0;
+
+}
+
+
+#socialButton > a {
+	margin-right: 1.5em;
+}
+
+#searchSubmit{
+
+}
+
+.cst-career-btn{
+	
+	background-color: #67bdcb;	
+	margin-top: 25px;
+	margin-right: 20px;
+	border: 0;
+
+	@media (max-width:380px){
+	   		margin-top:50px; 
+		}
+}
+
+
+
