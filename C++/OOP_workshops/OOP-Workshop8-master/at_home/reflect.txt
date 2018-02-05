@@ -1,0 +1,8 @@
+1. Why was it not necessary to create an isEmpty() member function?
+A: Because SuperHero will use the same function inherited from Hero it check the same variable.
+2. What privacy access level did you set for your strength member attribute?
+A: It is settled to protected, so that because the inheritance is Public it is possible to access the variable in Hero through constructors and functions, indirectly access in fact.
+3. How would you modify your solution to make the strength member attribute private?
+A: If I call the inheritance as protected or private all variables in Hero will be private and cannot be accessed by any child.
+4. How would your solution need to be modified in order for the SuperHero::display member function object to display the deceased SuperHero’s name?  For example, the function would be modified to print “(name) the deceased superhero!”  Explain in plain English.
+A: Just add the variable name_ in front of the statement to be print, it will capture the name of the hero that have died.

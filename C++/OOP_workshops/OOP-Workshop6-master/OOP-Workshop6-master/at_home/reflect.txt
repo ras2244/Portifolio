@@ -1,0 +1,8 @@
+1. Explain why if possible, we should avoid using friend helper functions.
+A: Because friend helper gives free access to any function change class parameters. It can cause an uncontrolled change that will bring many problems to the program.
+
+2. Could the first helper operator+ (which accepts Accounts as left and right operands) implemented as a member operator? If yes, how?
+A: yes. For this is necessary to implement a properly getter and setter to provide the information from the class to the operator.
+
+3. In this line of your main function: A = B += C += 100.01; the under lined operator+= that accepts a double as right operand is never defined. Explain how is it, that the code compiles and runs correctly.
+A: Because the compile searches for operators and simple all conditions to fit and resolve the equation, if it finds one it compiles and uses this one to solver the problem. In this particular case it is possible because this double operator+=(double& t, const Account& s) provides the condition that makes possible do this equation. 

@@ -1,0 +1,11 @@
+
+1. Explain what virtual functions are. 
+a. Virtual functions are functions example of polymorphism where the polymorphic object can change its type throughout its lifetime if the type belongs to the inheritance hierarchy.
+2. What is the difference between virtual and pure virtual? 
+a. Virtual functions have their implementation, while pure virtual does not have. Their implementation belongs to child classes.
+
+Example: pickupCar and sportCar are responsible to implement pure virtual functions prototyped in Vehicle.
+
+3. What are abstract classes and interfaces? 
+a. A class that have at least one pure virtual function is known as abstract class. While a class which all functions are pure virtual is known as interface, which means that this class does not have any implementation.
+Examples: Vehicle function represents an interface because all functions are all pure virtual functions.

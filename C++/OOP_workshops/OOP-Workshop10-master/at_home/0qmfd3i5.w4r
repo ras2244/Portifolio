@@ -1,0 +1,137 @@
+#include <cstring>
+#include <iostream>
+#include <cstring>
+#include "String.h"
+
+
+using namespace std;
+
+namespace ict
+{
+   // write your implementations here
+
+  void String::deallocate(){
+    delete[] m_data;
+    m_data = nullptr;
+    m_memSize = 0;
+  }
+
+  void String::allocate(int num){
+    deallocate();
+    m_data = new char[num];
+    m_memSize = num;
+  }
+
+  void String::init(const char* str, int memsize){
+    if (memsize > strlen(str + 1)){
+      allocate(memsize);
+    }
+    else{
+      memsize = strlen(str + 1);
+      allocate(memsize);
+    }
+
+    strcpy(m_data, str);
+    m_len = strlen(str + 1);
+  }
+
+  void String::resize(int newsize){
+    allocate(newsize);
+    
+  }
+
+  String::String(){
+    m_data = nullptr;
+    m_len = 0;
+    m_memSize = 0;
+  }
+
+  String::String(const char* str, int memsize){
+    init(str, memsize);
+  }
+
+  String::String(const String& other){
+    init(other.m_data, other.m_memSize);
+  }
+
+  String& String::operator=(const String& other){
+    if (this != &other){
+      deallocate();
+      init(other.m_data, other.m_memSize);
+    }
+    else{
+      deallocate();
+    }
+    return *this;
+  }
+
+  String::~String(){
+    deallocate();
+  }
+
+  int String::getLength()const{
+    return m_len;
+  }
+
+  int String::getMemSize()const{
+    return m_memSize;
+  }
+
+  String& String::operator+=(const char* str){
+    int count = strlen(str) + m_len + 1;
+    
+    if (count<m_memSize){
+      strcat(m_data, str);
+    }
+    else{
+      resize(count + 1);
+      strcat(m_data, str);
+      m_len = count + 1;
+    }
+    return *this;
+  }
+
+  String String::operator+(const String& str)const{
+    String temp(m_data);
+    temp=str;
+    return temp;
+  }
+  
+  String& String::operator+=(String& str){
+    return *this+= str.m_data;
+    
+  }
+  
+  String& String::operator++(){    
+    return *this = String(" ") + *this;
+  }
+
+  String String::operator++(int num){
+    String temp(m_data); 
+    temp.m_data += ' ';
+    return temp;
+  }
+
+  String::operator const char *()const{
+    return m_data;
+  }
+
+  String::operator int()const{
+    return getLength();
+  }
+
+  char& String::operator[](int index){
+    if (index > m_memSize){
+      m_memSize += ExpansionSize;
+    }
+    return m_data[index];
+  }
+
+  std::istream& String::read(std::istream& istr){
+    int i = 0;
+    
+    for (i = 0; i<m_memSize)
+  }
+
+}
+  

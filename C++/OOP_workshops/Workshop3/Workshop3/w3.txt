@@ -1,0 +1,234 @@
+Script started on Tue 31 Jan 2017 01:08:52 PM EST
+rde-oliveira-leal@matrix:~/OOP345/workshop3> who ami[K[K[K[Kami
+rde-oliveira-leal
+rde-oliveira-leal@matrix:~/OOP345/workshop3> cat w3.cpp Text.h Text.Cpp[K[K[Kcpp
+#include <iostream>
+#include <iomanip>
+#include <utility>
+#include <ctime>
+#include "Text.h"
+#define TIME(start, end) double((end) - (start)) / CLOCKS_PER_SEC
+
+int main(int argc, char* argv[]) {
+  if (argc == 1) {
+    std::cerr << argv[0] << ": missing file operand\n";
+    return 1;
+  }
+  else if (argc != 2) {
+    std::cerr << argv[0] << ": too many arguments\n";
+    return 2;
+  }
+  std::clock_t cs, ce;
+  {
+    std::cout << std::fixed << std::setprecision(3);
+    cs = std::clock();
+    w3::Text a;
+    ce = std::clock();
+    std::cout << "Constructor      " << TIME(cs, ce) << " seconds";
+    std::cout << " - a.size = " << a.size() << std::endl;
+
+    cs = std::clock();
+    w3::Text b(argv[1]);
+    ce = std::clock();
+    std::cout << "Constructor      " << TIME(cs, ce) << " seconds";
+    std::cout << " - b.size = " << b.size() << std::endl;
+
+    cs = std::clock();
+    a = b;
+    ce = std::clock();
+    std::cout << "Copy Assignment  " << TIME(cs, ce) << " seconds";
+    std::cout << " - a.size = " << a.size() << std::endl;
+
+    cs = std::clock();
+    a = std::move(b);
+    ce = std::clock();
+    std::cout << "Move Assignment  " << TIME(cs, ce) << " seconds";
+    std::cout << " - a.size = " << a.size() << std::endl;
+
+    cs = std::clock();
+    w3::Text c = a;
+    ce = std::clock();
+    std::cout << "Copy Constructor " << TIME(cs, ce) << " seconds";
+    std::cout << " - c.size = " << c.size() << std::endl;
+
+    cs = std::clock();
+    w3::Text d = std::move(a);
+    ce = std::clock();
+    std::cout << "Move Constructor " << TIME(cs, ce) << " seconds";
+    std::cout << " - d.size = " << d.size() << std::endl;
+
+    cs = std::clock();
+  }
+  ce = std::clock();
+  std::cout << "Destructor       " << TIME(cs, ce) << " seconds\n";
+}#pragma once
+#include <fstream>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+namespace w3{
+  
+
+  class Text{
+    size_t count;
+    string* goodTable;
+  public:
+    ~Text(){
+      delete[] goodTable;
+    }
+
+    Text() :count(0), goodTable(nullptr){}// default constructor needed for w3.cpp:21
+
+    Text(char* f);
+    Text& operator = (const Text& rhs);
+
+    Text&& operator = (Text&& rhs);
+
+    Text(const Text& rhs);
+
+    Text(Text&& rhs);
+
+    void dump();
+
+    size_t size()const;
+
+  };//text
+} // namespace#include <fstream>
+#include <iostream>
+#include <string>
+#include "Text.h"
+
+using namespace std;
+using namespace w3;
+
+Text::Text(char* f) :count(0){ //constructor needed for w3.cpp:27
+  fstream in(f, std::ios::in);
+
+  if (in.is_open()){
+    std::string line;
+    while (in.eof()==false){
+      getline(in, line);
+      //cout << "test";
+      count++;
+      }
+
+      /*std::cout << "file'" << f << "' contains " << count<<" lines\n";*/
+      goodTable = new std::string[count];
+
+      /*cout << "good()=" << in.good() << " if set, -none of  the flag is set\n";
+      cout << "good()=" << in.fail() << " if set, ios::failbit or ios::badbit is true\n";
+      cout << "good()=" << in.eof() << " if set, ios::eofbit is true\n";
+      cout << "good()=" << in.bad() << " if set, ios::badbit is true\n";
+
+      std::cout << "clearing all status flags\n";*/
+      in.clear();
+
+
+      /*for (size_t i = 0; i<count; i++){
+      getline(in, goodTable[i]);
+      }*/
+      //goodTable = new std::string[count];
+
+      /*cout << "good()=" << in.good() << " if set, -none of  the flag is set\n";
+      cout << "good()=" << in.fail() << " if set, ios::failbit or ios::badbit is true\n";
+      cout << "good()=" << in.eof() << " if set, ios::eofbit is true\n";
+      cout << "good()=" << in.bad() << " if set, ios::badbit is true\n";*/
+      in.seekg(0); // position the file at the beggining (start)
+
+
+      for (size_t i = 0; i < count; i++){
+        getline(in, goodTable[i]);
+        auto cr = goodTable[i].find('\r');
+        if (cr != std::string::npos){
+          goodTable[i].erase(cr);
+        }
+        in.close();
+
+        //dump();
+      }
+
+      /*in.close();*/
+      /* size_t num = count;
+      if (num>10){
+      num = 10;
+      }
+      for (size_t i = 0; i < count; i++){
+      std: cout << " line" << i + 1 << ": '" << goodTable[i] << "'\n";
+      }*/
+    //}
+  }
+  else{
+    std::cerr << "canot open filer" << f << "'n";
+    exit(3);
+  }
+
+}
+
+Text& Text::operator = (const Text& rhs){ //constructor needed for w3.cpp:36
+
+  /*std::cout << "copy =op : this/lineTable=" << (void*)this << "/" << (void*)goodTable <<
+    " rhs/rhs.lineTable=" << (void*)&rhs << "/" << (void*)rhs.goodTable << "\n";*/
+  if (this != &rhs){
+    
+    delete[] goodTable;
+    goodTable = nullptr;
+    count = 0;
+
+    count = rhs.count;
+
+    // deep copy
+    goodTable = new std::string[count];
+    for (size_t i = 0; i < count; i++) {
+      goodTable[i] = rhs.goodTable[i];
+    }
+  }
+  return *this;
+}
+
+Text&& Text::operator = (Text&& rhs){//constructor needed for w3.cpp:42
+  if (this != &rhs){
+    delete[] goodTable;
+    //move pointer+count (steal brains)
+    goodTable = rhs.goodTable;
+    count = rhs.count;
+    //turn rhs into a zombie
+    rhs.count = 0;
+    rhs.goodTable = nullptr;
+  }
+  return std::move(*this);
+}
+
+Text::Text(const Text& rhs) :count(0), goodTable(nullptr){ //constructor needed for w3.cpp:48
+  *this = rhs;
+}
+
+Text::Text(Text&& rhs) :count(0), goodTable(nullptr){ //constructor needed for w3.cpp:54
+  *this = std::move(rhs);
+}
+
+void Text::dump() {
+  size_t number = count;
+  if (number > 10) number = 10;
+  for (size_t i = 0; i < number; i++) {
+    // i+1 to count from 1, not 0
+    std::cout << "   line " << i << " -->" << goodTable[i] << "<--\n";
+  }
+}
+
+size_t Text::size()const{ 
+  return count;
+}rde-oliveira-leal@matrix:~/OOP345/workshop3> ge[K++ -o w3 w3.cpp[K[K[K[K[K[K-std=c++0x w3.cpp Text.cp p
+rde-oliveira-leal@matrix:~/OOP345/workshop3> w3 gutenberg_shakespeare.txt 
+Constructor      0.000 seconds - a.size = 0
+Constructor      0.050 seconds - b.size = 124456
+Copy Assignment  0.010 seconds - a.size = 124456
+Move Assignment  0.000 seconds - a.size = 124456
+Copy Constructor 0.000 seconds - c.size = 124456
+Move Constructor 0.000 seconds - d.size = 124456
+Destructor       0.000 seconds
+rde-oliveira-leal@matrix:~/OOP345/workshop3> exit
+exit
+
+Script done on Tue 31 Jan 2017 01:14:12 PM EST

@@ -1,0 +1,4 @@
+﻿  OddOccurrencesInArray.cpp
+c:\users\ricardo\documents\examples\oddoccurrencesinarray\oddoccurrencesinarray\oddoccurrencesinarray.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\users\ricardo\documents\examples\oddoccurrencesinarray\oddoccurrencesinarray\oddoccurrencesinarray.cpp(68): warning C4018: '<': signed/unsigned mismatch
+  OddOccurrencesInArray.vcxproj -> C:\Users\Ricardo\Documents\examples\OddOccurrencesInArray\Debug\OddOccurrencesInArray.exe

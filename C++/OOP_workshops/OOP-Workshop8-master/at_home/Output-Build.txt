@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: WS8, Configuration: Debug Win32 ------
+1>  SuperHero.cpp
+1>  WS8.vcxproj -> D:\OOP-Workshop8-master\at_home\Debug\WS8.exe
+1>  WS8.vcxproj -> D:\OOP-Workshop8-master\at_home\Debug\WS8.pdb (Full PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

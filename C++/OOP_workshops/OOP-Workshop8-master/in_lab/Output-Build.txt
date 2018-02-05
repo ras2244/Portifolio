@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: WS8, Configuration: Debug Win32 ------
+1>  WS8.vcxproj -> E:\OOP-Workshop8-master\in_lab\Debug\WS8.exe
+1>  WS8.vcxproj -> E:\OOP-Workshop8-master\in_lab\Debug\WS8.pdb (Full PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

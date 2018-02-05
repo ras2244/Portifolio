@@ -1,0 +1,110 @@
+Script started on Fri 27 Jan 2017 04:14:45 PM EST
+rde-oliveira-leal@matrix:~/OOP345/workshop1> whoami
+rde-oliveira-leal
+rde-oliveira-leal@matrix:~/OOP345/workshop1> cat w1.cpp CString.h CString.cpp Pr ocess.h Process.cpp
+#include <iostream>
+#include "CString.h"
+#include "Process.h"
+
+using namespace w1;
+using namespace std;
+
+int main (int argc, char* argv[]){
+	//out<<"number of arguments (argc) is "<<argc<< "\n";
+	//for (int arg=0; arg<argc; arg++){
+	//cout<<"argv["<<arg<<"] is __>" <<argv[arg]<<"<--\n";
+	//}
+	
+	cout<<"Command line :";
+		for (int arg=0; arg<argc; arg++){
+			cout<<" "<< argv[arg];
+			//cout<<endl;
+		}
+		
+	
+	//cout<<"Maximum number of characters stored :" <<num<<"\n";
+	
+	if(argc==1){
+		cerr<<"\ninsuficient numberr of arguments (min 1)\n";
+		return 1;
+	}
+	
+	cout<<"\nMaximum number of characters stored :" <<num<<"\n";
+		
+	for (int arg=1; arg<argc; arg++){
+			//cout<<arg -1 << ": ";
+			process(argv[arg]);
+		}
+		
+	return 0;
+}#pragma once
+#include <iostream>
+
+using namespace std;
+int const num=3;
+
+namespace w1{
+	class CString{
+		char str[num+1];
+		public:
+		CString(const char* s);
+		void display(ostream & os);
+	};
+	ostream& operator<<(ostream& os, CString& cs);
+}//namespace#include <iostream>
+#include <cstring>
+#include "CString.h"
+
+//using namespace std;
+//using namespace w1;
+
+namespace w1{
+
+	CString::CString(const char* s){
+		strncpy(this->str,s,num);
+		this->str[num]='\0';
+	}
+	void CString::display(std::ostream & os){
+		os<<str;
+	}	
+
+	std::ostream& operator<<(std::ostream& os, CString& cs){
+		static int calls =0;
+		cout<<calls<<": ";
+		cs.display(os);
+		calls++;
+		return os;
+	}
+}//namespace#pragma once
+#include <iostream>
+
+void process(char *str);
+
+#include <iostream>
+#include "CString.h"
+#include "Process.h"
+
+//using namespace w1;
+//using namespace std;
+
+void process(char *str){
+	w1::CString cs(str);
+	std::cout << cs << "\n";
+}rde-oliveira-leal@matrix:~/OOP345/workshop1> cat w1.cpp CString.h CString.cpp Proocess.h Process.cpp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg++ -o w2 w2.cpp Stations.cpp Stati on.cpp -std=c++0x[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kg++ -o w1 w1.cpp CString.cpp proces s.cpp
+g++: error: process.cpp: No such file or directory
+rde-oliveira-leal@matrix:~/OOP345/workshop1> g++ -o w1 w1.cpp CString.cpp processs.cpp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPprocess.cpp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crocess.cpp[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+rde-oliveira-leal@matrix:~/OOP345/workshop1> w1 oop345 btp305
+Command line : w1 oop345 btp305
+Maximum number of characters stored :3
+0: oop
+1: btp
+rde-oliveira-leal@matrix:~/OOP345/workshop1> w1
+Command line : w1
+insuficient numberr of arguments (min 1)
+rde-oliveira-leal@matrix:~/OOP345/workshop1> exit
+exit
+
+Script done on Fri 27 Jan 2017 04:30:12 PM EST

@@ -1,0 +1,7 @@
+﻿1>------ Build started: Project: OOP_MS1, Configuration: Debug Win32 ------
+1>  oop_ms1_tester.cpp
+1>  Date.cpp
+1>  Generating Code...
+1>  OOP_MS1.vcxproj -> E:\OOP_MS1-master\Debug\OOP_MS1.exe
+1>  OOP_MS1.vcxproj -> E:\OOP_MS1-master\Debug\OOP_MS1.pdb (Full PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

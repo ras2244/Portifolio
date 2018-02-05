@@ -1,0 +1,4 @@
+<map id="ItemManager::IntegrityCheck" name="ItemManager::IntegrityCheck">
+<area shape="rect" id="node2" href="$class_task_manager.html#aeaef7ddb7486c661c727db37d6a68ebe" title="TaskManager::FindTask" alt="" coords="244,5,407,32"/>
+<area shape="rect" id="node3" href="$class_task.html#abe4c6544ca1044c332c3bf24fa9949c4" title="Task::getTaskName" alt="" coords="455,5,596,32"/>
+</map>

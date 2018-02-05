@@ -1,0 +1,4 @@
+﻿  CicleRotation.cpp
+c:\users\ricardo\documents\examples\ciclerotation\ciclerotation\ciclerotation.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\ricardo\documents\examples\ciclerotation\ciclerotation\ciclerotation.cpp(64): warning C4018: '<': signed/unsigned mismatch
+  CicleRotation.vcxproj -> C:\Users\Ricardo\Documents\examples\CicleRotation\Debug\CicleRotation.exe

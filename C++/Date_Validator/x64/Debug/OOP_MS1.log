@@ -1,0 +1,12 @@
+﻿Build started 03/11/2016 00:05:41.
+     1>Project "G:\OOP_MS1-master\OOP_MS1.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\OOP_MS1-master\x64\Debug\OOP_MS1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\OOP_MS1-master\x64\Debug\OOP_MS1.pdb" /SUBSYSTEM:CONSOLE,"5.02" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\OOP_MS1-master\x64\Debug\OOP_MS1.lib" /MACHINE:X64 x64\Debug\Date.obj
+         x64\Debug\oop_ms1_tester.obj
+     1>Date.obj : error LNK2001: unresolved external symbol "int ict::readErrorCode_" (?readErrorCode_@ict@@3HA)
+     1>G:\OOP_MS1-master\x64\Debug\OOP_MS1.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "G:\OOP_MS1-master\OOP_MS1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.31

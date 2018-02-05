@@ -1,0 +1,5 @@
+<map id="Task::getTaskPass" name="Task::getTaskPass">
+<area shape="rect" id="node2" href="$class_factory.html#a8b45b63dbf8b6ca3822759a930670ef0" title="Factory::Factory" alt="" coords="189,5,308,32"/>
+<area shape="rect" id="node3" href="$class_machine.html#a8376472dfae242fa91518c76de1d36f2" title="Machine::isSink" alt="" coords="191,56,306,83"/>
+<area shape="rect" id="node4" href="$class_machine.html#a70f2e04db0697a4e1d4e389ee553dd14" title="Machine::isSingleton" alt="" coords="356,56,499,83"/>
+</map>

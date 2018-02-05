@@ -1,0 +1,282 @@
+Script started on Fri 27 Jan 2017 03:38:23 PM EST
+rde-oliveira-leal@matrix:~/OOP345/workshop2> whoami
+rde-oliveira-leal
+rde-oliveira-leal@matrix:~/OOP345/workshop2> cat Station.h Station.cpp sta[K[K[KStations.h Stations.cpp
+#pragma once
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+enum PassType { PASS_STUDENT, PASS_ADULT, PASS_COUNT };
+namespace w2{
+  
+  class Station{   
+    string stationName;
+    unsigned int passes[PASS_COUNT];
+  public:
+    Station(){};
+    Station(std::istream& is); 
+
+    void set(const string& n, unsigned s, unsigned a);
+
+    void update(PassType pt, int num);
+
+    unsigned inStock(PassType pt) const;
+
+    const std::string& getName() const;
+
+    void report();
+  };
+}//namespace#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+#include "Station.h"
+
+using namespace std;
+//using namespace w2;
+
+namespace w2{
+
+    Station::Station(istream& is){
+    string s;
+    std::getline(is,s);
+    //std::cout << "station: s='" << s << "'\n";
+    //string name;
+    size_t index = 0;
+    while (index < s.size()){
+      
+      //cout << "Station: stationName='" << stationName << "'\n";
+
+      //if (index < s.size() && s[index] != ';'){
+      if (s[index] != ';'){
+        stationName += s[index];
+        index++;
+      }
+      else{
+        break;
+      }
+      
+    }
+
+    if (s[index] != ';'){      
+      std::cerr << "station record name for" << stationName << "'was not terminated with a ';' \n";
+      exit(3);
+    }
+    index++;
+    int student = 0;
+    while (index < s.size()){
+      if (isdigit(s[index])){
+        student = 10 * student + (s[index] - '0');
+        index++;
+      }
+      else{
+        break;
+      }
+    }
+    //cout << "station: student = " << student << "\n";
+    if (!(index < s.size() || s[index] == ' ')){
+      std::cerr << "student pass count for '" << stationName << "' was not terminated with a ' '\n";
+      exit(4);
+    }
+
+    index++; //skip ' '
+    int adult = 0;
+    while (index < s.size()){
+      if (isdigit(s[index])) {
+        adult = 10 * adult + (s[index] - '0');
+        //convert character to number
+        index++;
+      }
+      else{
+        break;
+      }
+    }
+    //std::cout << "station: adult = " << adult << "\n";
+    set(stationName, student, adult);
+    //stationName
+  }
+
+    void Station::set(const string& n, unsigned s, unsigned a){
+      //sets the instance variables to the values received in its parameter
+      stationName = n;
+      passes[PASS_STUDENT] = s;
+      passes[PASS_ADULT] = a;
+    }
+
+    void Station::update(PassType pt, int num){
+      //updates the number of passes - sold if negative, added if positive
+      passes[pt] += num;
+    }
+
+    unsigned Station::inStock(PassType pt) const{
+      //returns the number of passes of the requested type
+      return passes[pt];
+    }
+
+    const std::string& Station::getName() const{
+      //returns a reference to a string object holding the name of the station
+      return stationName;
+    }
+
+    void Station::report(){
+      std::cout << left << setw(22)<< stationName
+        <<setw(6)<< passes[PASS_STUDENT]
+        <<setw(6)<< passes[PASS_ADULT] << "\n";
+    }
+
+}//namespace#pragma once
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "Station.h"
+
+using namespace std;
+using namespace w2;
+namespace w2{ 
+
+  class Stations{
+    int stationCount;
+    Station* stationList;
+  public:
+    ~Stations(){
+      delete[] stationList;
+    }
+    Stations(const char* file);
+    void update();
+    void restock();
+    void report();
+
+  };//class Stations
+}#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+#include "Station.h"
+#include "Stations.h"
+
+using namespace std;
+using namespace w2;
+
+namespace w2{
+
+  Stations::Stations(const char* file) : stationCount(0),stationList(nullptr){
+    //std::cout << "file=" << file << "\n";
+    fstream is(file, ios::in);
+    if (!is.is_open()){
+      std::cerr << "Cannot open file '" << file << "'\n";
+      exit(2);
+    }
+    string s;
+    std::getline(is, s);
+    //std::cout << "s='" << s << "'\n";
+    int index = 0;
+    while (index < s.size()){
+      if (isdigit(s[index])){
+        stationCount = 10 * stationCount + (s[index] - '0');
+        index++;
+      }
+      else{
+        break;
+      }
+    }
+    if (index < s.size() && s[index] != ';'){
+      cout << "First record of '" << file << "' was not terminated with a ';'\n";
+      exit(3);
+    }
+
+
+    stationList = new Station[stationCount];
+    for (int count = 0; count < stationCount; count++){
+      stationList[count] = Station(is);
+    }
+
+    is.close();
+  }
+
+  void Stations::update(){
+    cout << "\nPasses Sold :" << endl;
+    cout << "-------------" << endl;
+    for (int i = 0; i < stationCount; i++){
+      int student, adult;
+      cout << stationList[i].getName() << "\n";
+      cout << " Student Passes sold : ";
+      cin >> student;
+      cout << " Adult   Passes sold : ";
+      cin >> adult;
+      stationList[i].update(PASS_STUDENT, -student);
+      stationList[i].update(PASS_ADULT, -adult);
+    }
+  }
+
+  void Stations::restock(){
+    cout << "\nPasses Added :" << endl;
+    cout << "--------------" << endl;
+    for (int i = 0; i < stationCount; i++){
+      int student, adult;
+      cout << stationList[i].getName() << "\n";
+      cout << " Student Passes added : ";
+      cin >> student;
+      cout << " Adult   Passes added : ";
+      cin >> adult;
+      stationList[i].update(PASS_STUDENT, +student);
+      stationList[i].update(PASS_ADULT, +adult);
+    }
+  }
+
+  void Stations::report(){
+    cout << "\nPasses In Stock : Student Adult" << endl;
+    cout << "-------------------------------" << endl;
+
+    for (int s = 0; s < stationCount; s++){
+      stationList[s].report();
+    }
+  }
+
+}//namespacerde-oliveira-leal@matrix:~/OOP345/workshop2> cat Station.h Station.cpp Stations.h Stations.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat Station.h Station.cpp Stations.h Stations.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+rde-oliveira-leal@matrix:~/OOP345/workshop2> w2 S[K[K[K[Kg++ -o w2 w2.cpp Stations.cpp Station.cpp -std=c++0x
+rde-oliveira-leal@matrix:~/OOP345/workshop2> w2 Stations.dat
+
+Command Line : w2 Stations.dat 
+
+Passes Sold :
+-------------
+Spadina
+ Student Passes sold : 5
+ Adult   Passes sold : 8
+Bathurst
+ Student Passes sold : 34
+ Adult   Passes sold : 52
+Keele
+ Student Passes sold : 21
+ Adult   Passes sold : 13
+Bay
+ Student Passes sold : 67
+ Adult   Passes sold : 65
+
+Passes Added :
+--------------
+Spadina
+ Student Passes added : 29
+ Adult   Passes added : 52
+Bathurst
+ Student Passes added : 113
+ Adult   Passes added : 61
+Keele
+ Student Passes added : 51
+ Adult   Passes added : 52
+Bay
+ Student Passes added : 109
+ Adult   Passes added : 107
+
+Passes In Stock : Student Adult
+-------------------------------
+Spadina               100   200   
+Bathurst              200   300   
+Keele                 100   100   
+Bay                   200   200   
+rde-oliveira-leal@matrix:~/OOP345/workshop2> exit
+exit
+
+Script done on Fri 27 Jan 2017 04:04:38 PM EST

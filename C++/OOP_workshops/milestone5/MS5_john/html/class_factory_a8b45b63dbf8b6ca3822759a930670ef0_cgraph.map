@@ -1,0 +1,15 @@
+<map id="Factory::Factory" name="Factory::Factory">
+<area shape="rect" id="node2" href="$class_item_manager.html#a9cfb7ffbb17de1f4a41af8edb0c03ec7" title="ItemManager::FindItem" alt="" coords="185,5,342,32"/>
+<area shape="rect" id="node3" href="$class_order.html#a0c24f80a07bb939f01d6446d5989cde5" title="Order::getCustomer" alt="" coords="195,56,332,83"/>
+<area shape="rect" id="node4" href="$class_order.html#a8675f0ed0def971cd2c427b9cc36c0bc" title="Order::getItem" alt="" coords="210,107,317,133"/>
+<area shape="rect" id="node5" href="$class_item.html#a57fadf4d235ae7f540fdea17e300a6ce" title="Item::getItemInstallerTask" alt="" coords="176,157,351,184"/>
+<area shape="rect" id="node6" href="$class_item.html#a8e24127876c61f9586a21a790a9ba1b2" title="Item::getItemRemoverTask" alt="" coords="172,208,355,235"/>
+<area shape="rect" id="node7" href="$class_order_manager.html#a97a154681116f7e54825ae10b9c07239" title="OrderManager::getOrder" alt="" coords="182,259,345,285"/>
+<area shape="rect" id="node8" href="$class_order.html#a086d4f9c9959a0bb069edfaa13cd9252" title="Order::getProduct" alt="" coords="201,309,326,336"/>
+<area shape="rect" id="node9" href="$class_order_manager.html#a9299cd9dca320eddd86da6312c3440c6" title="OrderManager::getSize" alt="" coords="185,360,341,387"/>
+<area shape="rect" id="node10" href="$class_task_manager.html#a93a244b0cedf395d2c2e4684e8c738b5" title="TaskManager::getTask" alt="" coords="185,411,341,437"/>
+<area shape="rect" id="node11" href="$class_task.html#aedf923e11ba9d54b3a3294facb83d529" title="Task::getTaskPass" alt="" coords="195,461,331,488"/>
+<area shape="rect" id="node12" href="$class_job.html#a66b2a53db5392b129bde5670325e6114" title="Job::Installed" alt="" coords="213,512,313,539"/>
+<area shape="rect" id="node13" href="$class_order.html#a2575eff2ac04537fc2f4248a6b8ca58d" title="Order::size" alt="" coords="220,563,307,589"/>
+<area shape="rect" id="node14" href="$class_task_manager.html#adefa4057b845a718a195d6e405e0c72e" title="TaskManager::size" alt="" coords="197,613,330,640"/>
+</map>

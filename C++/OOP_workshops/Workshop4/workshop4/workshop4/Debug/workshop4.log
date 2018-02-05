@@ -1,0 +1,40 @@
+﻿Build started 1/31/2017 9:14:17 AM.
+     1>Project "C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\workshop4\workshop4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt w4.cpp
+         w4.cpp
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(20): warning C4101: 'width' : unreferenced local variable
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(52): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(51) : while compiling class template member function 'KVList<std::string,double,5> &KVList<std::string,double,5>::replace(int,const K &,const V &)'
+                 with
+                 [
+                     K=std::string
+         ,            V=double
+                 ]
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(59) : see reference to function template instantiation 'KVList<std::string,double,5> &KVList<std::string,double,5>::replace(int,const K &,const V &)' being compiled
+                 with
+                 [
+                     K=std::string
+         ,            V=double
+                 ]
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(25) : see reference to class template instantiation 'KVList<std::string,double,5>' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(9): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(43) : see reference to function template instantiation 'void display<std::string,double,5>(const std::string &,const KVList<std::string,double,5> &,int)' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(22): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(21) : while compiling class template member function 'const std::string &KVList<std::string,double,5>::key(int) const'
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(11) : see reference to function template instantiation 'const std::string &KVList<std::string,double,5>::key(int) const' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(28): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(27) : while compiling class template member function 'const double &KVList<std::string,double,5>::value(int) const'
+                 c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\w4.cpp(11) : see reference to function template instantiation 'const double &KVList<std::string,double,5>::value(int) const' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(25): warning C4715: 'KVList<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,double,5>::key' : not all control paths return a value
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(31): warning C4715: 'KVList<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,double,5>::value' : not all control paths return a value
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(31): warning C4715: 'KVList<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,5>::value' : not all control paths return a value
+     1>c:\users\ricardo\documents\opp345\workshop4\workshop4\workshop4\kvlist.h(25): warning C4715: 'KVList<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,5>::key' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\Debug\workshop4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\Debug\workshop4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\Debug\workshop4.lib" /MACHINE:X86 Debug\w4.obj
+         workshop4.vcxproj -> C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\Debug\workshop4.exe
+     1>Done Building Project "C:\Users\Ricardo\Documents\OPP345\Workshop4\workshop4\workshop4\workshop4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.60

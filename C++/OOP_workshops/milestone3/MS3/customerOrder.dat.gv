@@ -1,0 +1,4 @@
+diagraph itemGraph {
+"Item:"->"Installer:"[color=green];
+"Item:"->"Remover: "[color=red];
+}

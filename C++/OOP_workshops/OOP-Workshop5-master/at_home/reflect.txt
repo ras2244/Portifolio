@@ -1,0 +1,6 @@
+1. Explain how allocate And Copy() function works in PhoneNumber.cpp?
+It first verify if all values received have the properly format and storage it in a variable bool valid, then it copies the values (area_ and number_) into the class PhoneNumber and allocates memory to receives an information from type (that has the size of the string), as soon as it has the memory allocated it copies the string into the class (type_).
+
+2. Explain why usually a copy constructor and assignment operator is needed when a class uses dynamic memory allocation to hold its resources.
+
+Because as soon as the constructor and Operators do their work they are immediately wipe out from the memory from the destructor, this simplify the code and bring more security preventing problem as memory leak.

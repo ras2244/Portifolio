@@ -1,0 +1,6 @@
+<map id="Task::getTaskName" name="Task::getTaskName">
+<area shape="rect" id="node2" href="$class_machine.html#a13ee7719d43c94c233f6d8968ce66c80" title="Machine::Classify" alt="" coords="213,5,339,32"/>
+<area shape="rect" id="node3" href="$class_task_manager.html#aeaef7ddb7486c661c727db37d6a68ebe" title="TaskManager::FindTask" alt="" coords="195,56,357,83"/>
+<area shape="rect" id="node4" href="$class_item_manager.html#abd8cecbb26433b790c56ea167e12bee8" title="ItemManager::IntegrityCheck" alt="" coords="405,56,596,83"/>
+<area shape="rect" id="node5" href="$factory_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="644,56,695,83"/>
+</map>

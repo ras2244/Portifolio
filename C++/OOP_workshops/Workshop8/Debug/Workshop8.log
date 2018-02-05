@@ -1,0 +1,36 @@
+﻿Build started 3/10/2017 6:44:42 PM.
+     1>Project "C:\Users\Ricardo\Documents\OPP345\Workshop8\Workshop8.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt w8.cpp
+         w8.cpp
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(42): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+                 c:\users\ricardo\documents\opp345\workshop8\datatable.h(41) : while compiling class template member function 'float w8::DataTable<float>::mean(void) const'
+                 c:\users\ricardo\documents\opp345\workshop8\w8.cpp(39) : see reference to function template instantiation 'float w8::DataTable<float>::mean(void) const' being compiled
+                 c:\users\ricardo\documents\opp345\workshop8\w8.cpp(28) : see reference to class template instantiation 'w8::DataTable<float>' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(49): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop8\datatable.h(45) : while compiling class template member function 'float w8::DataTable<float>::sigma(void) const'
+                 c:\users\ricardo\documents\opp345\workshop8\w8.cpp(39) : see reference to function template instantiation 'float w8::DataTable<float>::sigma(void) const' being compiled
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(67): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+                 c:\users\ricardo\documents\opp345\workshop8\datatable.h(65) : while compiling class template member function 'void w8::DataTable<float>::regression(T &,T &) const'
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\users\ricardo\documents\opp345\workshop8\w8.cpp(34) : see reference to function template instantiation 'void w8::DataTable<float>::regression(T &,T &) const' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(68): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(73): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\ricardo\documents\opp345\workshop8\datatable.h(88): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\ricardo\documents\opp345\workshop8\datatable.h(84) : while compiling class template member function 'void w8::DataTable<float>::display(std::ostream &) const'
+                 c:\users\ricardo\documents\opp345\workshop8\datatable.h(98) : see reference to function template instantiation 'void w8::DataTable<float>::display(std::ostream &) const' being compiled
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ricardo\Documents\OPP345\Workshop8\Debug\Workshop8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ricardo\Documents\OPP345\Workshop8\Debug\Workshop8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ricardo\Documents\OPP345\Workshop8\Debug\Workshop8.lib" /MACHINE:X86 Debug\w8.obj
+         Workshop8.vcxproj -> C:\Users\Ricardo\Documents\OPP345\Workshop8\Debug\Workshop8.exe
+     1>Done Building Project "C:\Users\Ricardo\Documents\OPP345\Workshop8\Workshop8.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.85

@@ -1,0 +1,5 @@
+<map id="Machine::isSingleton" name="Machine::isSingleton">
+<area shape="rect" id="node2" href="$class_machine.html#a8376472dfae242fa91518c76de1d36f2" title="Machine::isSink" alt="" coords="204,5,319,32"/>
+<area shape="rect" id="node4" href="$class_machine.html#a7a49710f0f78b6c6dc5c0ec2e62a3c7c" title="Machine::isSource" alt="" coords="196,56,327,83"/>
+<area shape="rect" id="node3" href="$class_task.html#aedf923e11ba9d54b3a3294facb83d529" title="Task::getTaskPass" alt="" coords="375,5,511,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Machine::Classify" name="Machine::Classify">
+<area shape="rect" id="node2" href="$class_item_manager.html#ab05e140d3bc0272328e40065d360f5be" title="ItemManager::getItem" alt="" coords="180,5,331,32"/>
+<area shape="rect" id="node3" href="$class_item_manager.html#a6b89dbdfc1ae747d00233912ecdcb2db" title="ItemManager::getSize" alt="" coords="180,56,331,83"/>
+<area shape="rect" id="node4" href="$class_task.html#abe4c6544ca1044c332c3bf24fa9949c4" title="Task::getTaskName" alt="" coords="185,107,326,133"/>
+</map>
